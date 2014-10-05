@@ -69,8 +69,10 @@ class IdeasController < ApplicationController
       @comment = @idea.comments.build
     end
 
+
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def idea_params
-      params.require(:idea).permit(:name, :description, :picture)
+      params.require(:idea, :rating).permit(:name, :description, :picture, :rating)
     end
 end

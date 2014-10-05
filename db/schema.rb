@@ -29,4 +29,8 @@ ActiveRecord::Schema.define(version: 20141005074903) do
     t.datetime "updated_at"
   end
 
+  create_table "ratings", id: false, force: true do |t|
+    t.integer "Field1"
+  end
+
 end

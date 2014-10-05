@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'ratings/user_name'
+
+  get 'ratings/idea_rating'
+
+  resources :ratings
+
   resources :comments
 
   get 'pages/info'
